@@ -1,0 +1,154 @@
+* {box-sizing:border-box}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.background{
+  background-image: url("images/test.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% -13%;
+  background-size: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif ;
+  -ms-overflow-style: none;
+  text-align: center;
+}
+
+.main_image{
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-height: 101%;
+  overflow: hidden;
+}
+.main_image img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+.Space{
+  margin-bottom: 50%
+}
+
+.Main{
+  background-position: center;
+  position: relative;
+  top: 10%;
+  padding: 0 5%;
+}
+
+.heading{
+  padding: 0.2%;
+  background-color: white;
+  font-size: 275%;
+  display: inline-block;
+}
+
+.Header{
+  overflow: hidden;
+  background-color: #00ff00;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Sansita Swashed';
+  font-size: 120%;
+  z-index: 1;
+}
+
+.Header a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 1% 1.2%;
+  text-decoration: none;
+}
+
+.paragraph{
+  background-color: white;
+  font-size: 130%;
+  padding: 1%;
+  display:inline-block;
+}
+
+.slideshow {
+  max-width: 69%;
+  max-height: 69%;
+  position: relative;
+  margin: 5.5% 30% 1%;
+}
+
+.mySlides {
+  display: none;
+  z-index: 0;
+}
+
+.text {
+  color: #f2f2f2;
+  background-color: #000000;
+  font-size: 100%;
+  padding: 1% 2%;
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  height: 2%;
+}
+
+.text a{
+  color: green
+}
+
+.text a{
+  color:aqua
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.image_fanArt{
+  width: 100%;
+  height: 100%;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column{
+  margin: 1% 0;
+  padding: 2%;
+  width: 50%;
+  float: left;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
