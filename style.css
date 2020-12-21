@@ -5,7 +5,7 @@ body::-webkit-scrollbar{
 }
 
 .background{
-  background-image: url("images/test.jpg");
+  background-image: url("images/background.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% -13%;
@@ -16,38 +16,17 @@ body::-webkit-scrollbar{
   text-align: center;
 }
 
-.main_image{
-  margin: 0;
-  position: absolute;
-  padding: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  max-height: 101%;
-  overflow: hidden;
-}
-.main_image img{
-  width: 100%;
-  height: 100%;
-  margin-bottom: 5%;
+.column{
+  margin: 1% 0;
+  padding: 2%;
+  width: 50%;
+  float: left;
 }
 
-.Space{
-  margin-bottom: 50%
-}
-
-.Main{
-  background-position: center;
-  position: relative;
-  top: 10%;
-  padding: 0 5%;
-}
-
-.heading{
-  padding: 0.2%;
-  background-color: white;
-  font-size: 275%;
-  display: inline-block;
+.fade {
+  animation-delay: 1s;
+  -webkit-animation: fade 9s linear forwards;
+  animation: fade 9s linear forwards;
 }
 
 .Header{
@@ -70,11 +49,65 @@ body::-webkit-scrollbar{
   text-decoration: none;
 }
 
+.heading{
+  padding: 0.2%;
+  background-color: white;
+  font-size: 275%;
+  display: inline-block;
+}
+
+.image_fanArt{
+  width: 100%;
+  height: 100%;
+}
+
+.Main{
+  background-position: center;
+  position: relative;
+  top: 10%;
+  padding: 0 5%;
+}
+
+.main_image{
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-height: 101%;
+  overflow: hidden;
+}
+.main_image img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+.mySlides {
+  display: none;
+  z-index: 0;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
 .paragraph{
   background-color: white;
   font-size: 130%;
   padding: 1%;
   display:inline-block;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .slideshow {
@@ -84,9 +117,8 @@ body::-webkit-scrollbar{
   margin: 5.5% 30% 1%;
 }
 
-.mySlides {
-  display: none;
-  z-index: 0;
+.Space{
+  margin-bottom: 50%
 }
 
 .text {
@@ -103,52 +135,19 @@ body::-webkit-scrollbar{
 }
 
 .text a{
-  color: green
+  color: aqua
 }
 
-.text a{
-  color:aqua
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-.image_fanArt{
-  width: 100%;
-  height: 100%;
-}
-
-.row::after{
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.column{
-  margin: 1% 0;
-  padding: 2%;
-  width: 50%;
-  float: left;
+.text a:visited{
+  color:green
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .5}
-  to {opacity: 1}
+  0%, 100% {opacity: .4;}
+  20%, 85% {opacity: 1;}
 }
 
 @keyframes fade {
-  from {opacity: .5}
-  to {opacity: 1}
+  0%, 100% {opacity: .4;}
+  20%, 85% {opacity: 1;}
 }
