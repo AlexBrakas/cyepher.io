@@ -50,6 +50,7 @@ body::-webkit-scrollbar{
 }
 
 .heading{
+  color: white;
   padding: 0.2%;
   -webkit-text-stroke: 1px Black;
   font-size: 275%;
@@ -98,6 +99,7 @@ body::-webkit-scrollbar{
 }
 
 .paragraph{
+  color: white;
   -webkit-text-stroke: 1px Black;
   font-size: 130%;
   padding: 1%;
