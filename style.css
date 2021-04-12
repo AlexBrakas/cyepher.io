@@ -51,7 +51,7 @@ body::-webkit-scrollbar{
 
 .heading{
   padding: 0.2%;
-  background-color: white;
+  -webkit-text-stroke: 2px white;
   font-size: 275%;
   display: inline-block;
 }
@@ -98,7 +98,7 @@ body::-webkit-scrollbar{
 }
 
 .paragraph{
-  background-color: white;
+  -webkit-text-stroke: 2px white;
   font-size: 130%;
   padding: 1%;
   display:inline-block;
