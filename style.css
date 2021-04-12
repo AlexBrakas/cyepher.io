@@ -51,8 +51,8 @@ body::-webkit-scrollbar{
 
 .heading{
   color: white;
-  -webkit-text-stroke: 1px Black;
-  font-size: 275%;
+  -webkit-text-stroke: 2px Black;
+  font-size: 325%;
   display: inline-block;
 }
 
@@ -101,6 +101,7 @@ body::-webkit-scrollbar{
   color: Black;
   background-color: white;
   font-size: 175%;
+  padding: 1%;
   display:inline-block;
 }
 
