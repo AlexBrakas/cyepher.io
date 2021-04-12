@@ -98,9 +98,9 @@ body::-webkit-scrollbar{
 }
 
 .paragraph{
-  color: white;
-  -webkit-text-stroke: 1px Black;
-  font-size: 150%;
+  color: Black;
+  background-color: white;
+  font-size: 175%;
   display:inline-block;
 }
 
