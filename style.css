@@ -12,7 +12,6 @@ body::-webkit-scrollbar{
   font-family: Arial, Helvetica, sans-serif ;
   -ms-overflow-style: none;
   text-align: center;
-  filter: brightness(75%);
 }
 
 .btn_blue {
